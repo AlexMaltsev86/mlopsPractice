@@ -12,21 +12,21 @@ pipeline {
         stage('Preparation environment') {
             steps {
                 bat  '''
-                    python3 C://Users//malet//AppData//Local//Programs//Python//Python311//python C://ProgramData//Jenkins//.jenkins//workspace//lab2//lab2//model_preprocessing.py
+                    C://Users//malet//AppData//Local//Programs//Python//Python311//python C://ProgramData//Jenkins//.jenkins//workspace//lab2//lab2//model_preprocessing.py
                     '''
             }
         }
         stage('Model training') {
             steps {
                 bat  '''
-                    python3 C://Users//malet//AppData//Local//Programs//Python//Python311//python C://ProgramData//Jenkins//.jenkins//workspace//lab2//lab2//model_preparation.py
+                    C://Users//malet//AppData//Local//Programs//Python//Python311//python C://ProgramData//Jenkins//.jenkins//workspace//lab2//lab2//model_preparation.py
                     '''
             }
         }
         stage('Model testing') {
             steps {
                 bat  '''
-                    python3 C://Users//malet//AppData//Local//Programs//Python//Python311//python C://ProgramData//Jenkins//.jenkins//workspace//lab2//lab2//model_testing.py
+                    C://Users//malet//AppData//Local//Programs//Python//Python311//python C://ProgramData//Jenkins//.jenkins//workspace//lab2//lab2//model_testing.py
                     '''
             }
         }
