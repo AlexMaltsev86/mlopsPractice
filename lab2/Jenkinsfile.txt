@@ -5,7 +5,7 @@ pipeline {
         stage('data generation') {
             steps {
                 bat  '''
-                    python3 C:\ProgramData\Jenkins\.jenkins\workspace\lab2\lab2\data_creation.py
+                    python3 C://ProgramData//Jenkins//.jenkins//workspace//lab2//lab2//data_creation.py
                     '''
             }
         }        
