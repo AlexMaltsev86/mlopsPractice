@@ -5,28 +5,28 @@ pipeline {
         stage('data generation') {
             steps {
                 bat  '''
-                    python3 lab2/data_creation.py
+                    python3 data_creation.py
                     '''
             }
         }        
         stage('Preparation environment') {
             steps {
                 bat  '''
-                    python3 lab2/model_preprocessing.py
+                    python3 model_preprocessing.py
                     '''
             }
         }
         stage('Model training') {
             steps {
                 bat  '''
-                    python3 lab2/model_preparation.py
+                    python3 model_preparation.py
                     '''
             }
         }
         stage('Model testing') {
             steps {
                 bat  '''
-                    python3 lab2/model_testing.py
+                    python3 model_testing.py
                     '''
             }
         }
