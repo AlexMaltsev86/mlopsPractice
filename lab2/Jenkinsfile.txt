@@ -4,28 +4,28 @@ pipeline {
 
         stage('data generation') {
             steps {
-                sh '''
+                bat  '''
                     python3 lab2/data_creation.py
                     '''
             }
         }        
         stage('Preparation environment') {
             steps {
-                sh '''
+                bat  '''
                     python3 lab2/model_preprocessing.py
                     '''
             }
         }
         stage('Model training') {
             steps {
-                sh '''
+                bat  '''
                     python3 lab2/model_preparation.py
                     '''
             }
         }
         stage('Model testing') {
             steps {
-                sh '''
+                bat  '''
                     python3 lab2/model_testing.py
                     '''
             }
